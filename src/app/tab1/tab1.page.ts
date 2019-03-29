@@ -45,13 +45,31 @@ export class Tab1Page implements OnInit {
       maintainAspectRatio: false,
       responsive: true,
       options: {
-          scales: {
-              yAxes: [{
-                  ticks: {
-                      beginAtZero:true
-                  }
-              }]
-          }
+        tooltips: {
+          titleFontSize: 0,
+          titleMarginBottom: 0,
+          bodyFontSize: 12
+      },
+      legend: {
+          display: true
+      },
+      scales: {
+          xAxes: [{
+              ticks: {
+                  fontSize: 12,
+                  display: true
+              }
+          }],
+          yAxes: [{
+              ticks: {
+                  fontSize: 12,
+                  beginAtZero: true,
+                  display: true
+              }
+          }]
+      },
+        responsive: false
+         
       }
 
     });
