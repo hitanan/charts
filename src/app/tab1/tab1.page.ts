@@ -50,8 +50,12 @@ export class Tab1Page implements OnInit {
           titleMarginBottom: 0,
           bodyFontSize: 12
       },
+      title:{
+        text: "Try Zooming And Panning"
+      },
       legend: {
-          display: true
+        horizontalAlign: "right",
+        verticalAlign: "center"
       },
       scales: {
           xAxes: [{
